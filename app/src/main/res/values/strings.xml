@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Nike.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nike">Nike</string>
+    <string name="h2">Fill your details or continue with Social Media</string>
+    <string name="email_address">Email Address</string>
+    <string name="hello">Hello Again!</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="otp">OTP Verification</string>
+    <string name="slogan_otp">Please check your email to see the verification code</string>
+    <string name="forgot_slogan">Enter your Email account to reset
+    your password</string>
+    <string name="register">Register Account</string>
+    <string name="slogan">Let’s Start Journey With Nike</string>
+    <string name="slogan3">You Have the Power To</string>
+    <string name="slogan4">There Are Many Beautiful And Attractive Plants To Your Room</string>
+    <string name="slogan2">Smart, Gorgeous &amp; Fashionable Collection Explor Now</string>
+    <string name="welcome_nike">WELCOME TO NIKE</string>
+    <string name="todo">TODO</string>
+    <string name="next">Next</string>
+    <string name="your_name">Your Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_google">Sign In With Google</string>
+    <string name="sign_up_google">Sign Up With Google</string>
+    <string name="get_started">Get Started</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="recovery_password">Recovery Password</string>
+    <string name="new_user">New User? Create Account</string>
+    <string name="already_have">Already Have Account? Log In</string>
 </resources>

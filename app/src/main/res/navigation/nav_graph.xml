@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
 
+    <fragment
+        android:id="@+id/onBoard1Fragment"
+        android:name="com.sharif.nikecom.view.sign.OnBoard1Fragment"
+        android:label="OnBoard1Fragment" >
+        <action
+            android:id="@+id/on1_to_on2"
+            app:destination="@id/onBoard2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoard2Fragment"
+        android:name="com.sharif.nikecom.view.sign.OnBoard2Fragment"
+        android:label="OnBoard2Fragment" >
+        <action
+            android:id="@+id/on2_to_on3"
+            app:destination="@id/onBoard3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoard3Fragment"
+        android:name="com.sharif.nikecom.view.sign.OnBoard3Fragment"
+        android:label="OnBoard3Fragment" >
+        <action
+            android:id="@+id/on3_to_sign_in"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sharif.nikecom.view.sign.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/splash_to_on1"
+            app:destination="@id/onBoard1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.sharif.nikecom.view.sign.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/sign_in_to_up"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/sign_in_to_forgot"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.sharif.nikecom.view.sign.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/sign_up_to_in"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.sharif.nikecom.view.sign.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment" >
+        <action
+            android:id="@+id/forgot_to_otp"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.sharif.nikecom.view.sign.OTPFragment"
+        android:label="OTPFragment" />
 </navigation>
