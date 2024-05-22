@@ -9,6 +9,7 @@ import androidx.navigation.Navigation
 import com.sharif.nikecom.R
 import com.sharif.nikecom.databinding.FragmentSplashBinding
 
+@Suppress("DEPRECATION")
 class SplashFragment : Fragment(R.layout.fragment_splash) {
 
     private lateinit var binding: FragmentSplashBinding

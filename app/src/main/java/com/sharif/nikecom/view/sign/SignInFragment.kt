@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.sharif.nikecom.R
-import com.sharif.nikecom.databinding.FragmentOnBoard3Binding
 import com.sharif.nikecom.databinding.FragmentSignInBinding
 
 class SignInFragment : Fragment(R.layout.fragment_sign_in) {

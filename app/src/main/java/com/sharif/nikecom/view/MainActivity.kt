@@ -1,8 +1,7 @@
 package com.sharif.nikecom.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sharif.nikecom.R
+import androidx.appcompat.app.AppCompatActivity
 import com.sharif.nikecom.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
