@@ -32,5 +32,18 @@
     <string name="new_user">New User? Create Account</string>
     <string name="already_have">Already Have Account? Log In</string>
     <string name="default_web_client_id">1065871992770-l15fmd6f6jfscs16mas53p5oqtt4venl.apps.googleusercontent.com</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="explore">Explore</string>
+    <string name="searchText">Looking for shoes</string>
+    <string name="category">Select Category</string>
+    <string name="popular">Popular Shoes</string>
+    <string name="arrival">New arrivals</string>
+    <string name="_302_00">$302.00</string>
+    <string name="nike_jordan">Nike Jordan</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="outdoor">Outdoor</string>
 
 </resources>

@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main">#0D6EFD</color>
     <color name="hug">#E8E8ED</color>
+    <color name="hint">#787878</color>
+    <color name="hint_black">#323232</color>
     <color name="yellow">#FFB21A</color>
 </resources>

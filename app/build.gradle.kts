@@ -59,4 +59,12 @@ dependencies {
     implementation ("com.google.firebase:firebase-firestore")
     implementation ("com.google.firebase:firebase-storage")
     implementation("com.google.android.gms:play-services-auth:21.1.1")
+
+    implementation ("com.google.android.material:material:1.12.0")
+
+    implementation ("com.squareup.picasso:picasso:2.8")
+
+    implementation ("com.github.dhaval2404:imagepicker:2.1")
+
+
 }

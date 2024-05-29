@@ -12,6 +12,7 @@ import com.google.firebase.auth.auth
 import com.sharif.nikecom.R
 import com.sharif.nikecom.databinding.FragmentForgotPasswordBinding
 
+@Suppress("DEPRECATION")
 class ForgotPasswordFragment : Fragment(R.layout.fragment_forgot_password) {
 
     private lateinit var binding: FragmentForgotPasswordBinding
@@ -26,21 +27,44 @@ class ForgotPasswordFragment : Fragment(R.layout.fragment_forgot_password) {
         auth = Firebase.auth
 
         binding.resetButton.setOnClickListener {
-            navController.navigate(R.id.forgot_to_otp)
             resetPassword()
         }
 
     }
-
     private fun resetPassword() {
         val emailAddress = binding.inputEmail.text.toString()
 
-        Firebase.auth.sendPasswordResetEmail(emailAddress)
+        auth.fetchSignInMethodsForEmail(emailAddress)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(requireContext(), "Email sending", Toast.LENGTH_LONG).show()
-                }else {
-                    Toast.makeText(requireContext(), "Email can't send", Toast.LENGTH_LONG).show()
+                    val result = task.result
+                    if (result?.signInMethods?.isEmpty() == true) {
+                        Toast.makeText(
+                            requireContext(),
+                            "Email isn't registered",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    } else {
+                        Firebase.auth.sendPasswordResetEmail(emailAddress)
+                            .addOnCompleteListener { task1 ->
+                                if (task1.isSuccessful) {
+                                    Toast.makeText(
+                                        requireContext(),
+                                        "Email sending",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                    navController.navigate(R.id.forgot_to_otp)
+                                } else {
+                                    Toast.makeText(
+                                        requireContext(),
+                                        "Email can't send",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                }
+                            }
+                    }
+                } else {
+                    Toast.makeText(requireContext(), "Problem", Toast.LENGTH_LONG).show()
 
                 }
             }

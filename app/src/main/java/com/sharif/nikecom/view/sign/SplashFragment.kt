@@ -23,7 +23,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         Handler().postDelayed({
             navController.navigate(R.id.splash_to_on1)
-        }, 3000)
+        }, 1000)
 
     }
 }
