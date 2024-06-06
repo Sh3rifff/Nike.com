@@ -24,7 +24,7 @@ class CategoryAdapter(private val categoryList: ArrayList<CategoryModel>) :
 
         holder.binding.categoryName.text = categoryList[position].category
         holder.binding.categoryName.setOnClickListener {
-            holder.binding.categoryName.setTextColor(Color.WHITE)
+            holder.binding.categoryName.setTextColor(Color.BLACK)
         }
 //        holder.binding.categoryName.setBackgroundColor(Resources.getSystem().getColor(R.color.main))
 

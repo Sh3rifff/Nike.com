@@ -21,6 +21,7 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     private lateinit var navController: NavController
     private lateinit var auth: FirebaseAuth
 
+    @Deprecated("Deprecated in Java")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSignUpBinding.bind(view)

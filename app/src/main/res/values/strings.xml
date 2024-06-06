@@ -45,5 +45,12 @@
     <string name="nike_jordan">Nike Jordan</string>
     <string name="best_seller">Best Seller</string>
     <string name="outdoor">Outdoor</string>
+    <string name="favourite">Favourite</string>
+    <string name="sharif_shiraliyev">Sharif Shiraliyev</string>
+    <string name="sign_out">Sign out</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="orders">Orders</string>
+    <string name="my_cart">My Cart</string>
 
 </resources>
